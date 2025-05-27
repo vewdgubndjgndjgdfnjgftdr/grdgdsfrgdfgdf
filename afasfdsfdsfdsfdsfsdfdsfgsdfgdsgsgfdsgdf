@@ -1,0 +1,128 @@
+script_key = ''; -- add ur key here
+
+getgenv().Pivot = {
+    ['Bullet Redirection'] = {
+        ['Enabled'] = true,
+        ['Target Keybind'] = 'T',
+        ['Mode'] = 'FOV', -- FOV or Target
+        ['Checks'] = {
+            'Wall', 'Knocked', 'Grabbed', 'Vehicle'
+        },
+
+        ['Hit Location'] = {
+            ['Type'] = 'Closest Part', -- 'Closest Part' or 'Closest Point'
+            ['Parts'] = {
+                'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso',
+                'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm',
+                'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',
+                'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'
+            }
+        },
+
+        ['Fov'] = {
+            ['Size'] = {
+                ['X'] = 25,
+                ['Y'] = 25,
+                ['Z'] = 25,
+            },
+        },
+
+        ['Prediction'] = {
+            ['Sets'] = {
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
+            }
+        },
+    },
+
+    ['Camera Redirection'] = {
+        ['Enabled'] = true,
+        ['Snappiness'] = 0.123,
+        ['Keybind'] = 'Q',
+
+        ['Checks'] = {
+            'Wall', 'Knocked', 'Grabbed', 'Vehicle'
+        },
+
+        ['Fov'] = {
+            ['Size'] = {
+                ['X'] = 10,
+                ['Y'] = 10,
+                ['Z'] = 10,
+            },
+        },
+
+        ['Mode'] = {
+            ['ShiftLocked'] = true,
+            ['ThirdPerson'] = false,
+            ['FirstPerson'] = true,
+        },
+
+        ['Hit Location'] = {
+            ['Type'] = 'Closest Part',
+            ['Parts'] = {
+                'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso',
+                'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm',
+                'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',
+                'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'
+            }
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0.1225,
+            ['Y'] = 0.1225,
+            ['Z'] = 0.1225,
+        },
+    },
+
+    ['Trigger Redirection'] = {
+        ['Enabled'] = true,
+        ['Delay'] = 0,
+
+        ['Prediction'] = {
+            ['Value'] = 0,
+        },
+
+        ['Keybind'] = {
+            ['Bind'] = 'M1', 
+            ['Keybind Mode'] = 'Hold' -- 'Hold' or 'Toggle'
+        },
+
+        ['Fov'] = {
+            ['Size'] = {
+                ['X'] = 10,
+                ['Y'] = 10,
+                ['Z'] = 10,
+            },
+        },
+    },
+
+    ['Movement Modification'] = {
+        ['Options'] = {
+            ['Enabled'] = true,
+            ['DefaultSpeed'] = 35,
+            ['ToggleMode'] = true, -- Enables ToggleMovement
+            ['Keybinds'] = {
+                ['ToggleMovement'] = 'V',
+                ['Speed +5'] = 'M',
+                ['Speed -5'] = 'N',
+            }
+        }
+    },
+
+    ['Bullet Modification'] = {
+        ['Options'] = {
+            ['Enabled'] = true,
+            ['Multiplier'] = 0.01,
+            ['ToggleMode'] = true,
+
+            ['Keybinds'] = {
+                ['ToggleSpread'] = 'G',
+                ['Spread +0.1'] = 'J',
+                ['Spread -0.1'] = 'K',
+            },
+        }
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/242663f862c068eac12fe3755109f38d.lua"))()
