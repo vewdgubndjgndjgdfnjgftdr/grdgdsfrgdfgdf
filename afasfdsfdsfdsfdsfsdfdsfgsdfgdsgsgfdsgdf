@@ -1,83 +1,51 @@
 script_key = ''; -- add ur key here
 
 getgenv().Pivot = {
-    ['Bullet Redirection'] = {
-        ['Enabled'] = true,
-        ['Target Keybind'] = 'T',
-        ['Mode'] = 'FOV', -- FOV or Target
-        ['Checks'] = {
-            'Wall', 'Knocked', 'Grabbed', 'Vehicle'
+    ["Bullet Redirection"] = {
+        ["Enabled"] = true,
+        ['Target BInd'] = 'T',
+        ['Mode'] = 'Target', -- FOV // Target
+        ["Prediction"] = {
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0
         },
-
-        ['Hit Location'] = {
-            ['Type'] = 'Closest Part', -- 'Closest Part' or 'Closest Point'
-            ['Parts'] = {
-                'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso',
-                'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm',
-                'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',
-                'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'
+        ["Hit Location"] = {
+            ["Type"] = "Closest Part",
+            ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
+        },
+        ["Fov"] = {
+            ["Size"] = {
+                ["X"] = 15,
+                ["Y"] = 15,
+                ["Z"] = 15
             }
-        },
+        }
+    },
+
+    ['Camera'] = {
+        ['Enabled'] = true,
+        ['Smoothness'] = 0.123,
+        ['Bind'] = 'Q',
 
         ['Fov'] = {
-            ['Size'] = {
-                ['X'] = 25,
-                ['Y'] = 25,
-                ['Z'] = 25,
-            },
+            ['Value'] = 0,
+        },
+
+        ["Hit Location"] = {
+            ["Type"] = "Closest Part",
+            ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
         },
 
         ['Prediction'] = {
-            ['Sets'] = {
-                ['X'] = 0,
-                ['Y'] = 0,
-                ['Z'] = 0,
-            }
+            ['Value'] = 0,
         },
     },
 
-    ['Camera Redirection'] = {
+
+    ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Snappiness'] = 0.123,
-        ['Keybind'] = 'Q',
-
-        ['Checks'] = {
-            'Wall', 'Knocked', 'Grabbed', 'Vehicle'
-        },
-
-        ['Fov'] = {
-            ['Size'] = {
-                ['X'] = 10,
-                ['Y'] = 10,
-                ['Z'] = 10,
-            },
-        },
-
-        ['Mode'] = {
-            ['ShiftLocked'] = true,
-            ['ThirdPerson'] = false,
-            ['FirstPerson'] = true,
-        },
-
-        ['Hit Location'] = {
-            ['Type'] = 'Closest Part',
-            ['Parts'] = {
-                'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso',
-                'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm',
-                'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',
-                'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'
-            }
-        },
-
-        ['Prediction'] = {
-            ['X'] = 0.1225,
-            ['Y'] = 0.1225,
-            ['Z'] = 0.1225,
-        },
-    },
-
-    ['Trigger Redirection'] = {
-        ['Enabled'] = true,
+        ['Mode'] = 'Automatic', -- Automatic // Target
         ['Delay'] = 0,
 
         ['Prediction'] = {
@@ -91,30 +59,30 @@ getgenv().Pivot = {
 
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 10,
-                ['Y'] = 10,
-                ['Z'] = 10,
+                ['X'] = 15,
+                ['Y'] = 15,
+                ['Z'] = 15,
             },
         },
     },
 
-    ['Movement Modification'] = {
+    ['Movement'] = {
         ['Options'] = {
             ['Enabled'] = true,
-            ['DefaultSpeed'] = 35,
-            ['ToggleMode'] = true, -- Enables ToggleMovement
+            ['Default'] = 35,
+
             ['Keybinds'] = {
-                ['ToggleMovement'] = 'V',
-                ['Speed +5'] = 'M',
-                ['Speed -5'] = 'N',
+                ['Enabled Speed'] = 'V',
+                ['Speed Up'] = 'M',
+                ['Speed Down'] = 'N',
             }
         }
     },
 
-    ['Bullet Modification'] = {
+    ['Bullet'] = {
         ['Options'] = {
             ['Enabled'] = true,
-            ['Multiplier'] = 0.01,
+            ['Percent'] = 0.01,
             ['ToggleMode'] = true,
 
             ['Keybinds'] = {
