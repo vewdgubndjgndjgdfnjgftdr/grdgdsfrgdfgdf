@@ -125,4 +125,4 @@ getgenv().Pivot = {
         }
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/242663f862c068eac12fe3755109f38d.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfbb3bdb0042013aef508e3ca952baa6.lua"))()
