@@ -1,4 +1,4 @@
-script_key = 'FtiZOKlYSUYeySQxiNKykLYqtDaLWfRH'; -- add ur key here
+script_key = ''; -- add ur key here
 
 getgenv().Pivot = {
     ["Bullet Redirection"] = {
