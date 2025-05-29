@@ -1,108 +1,105 @@
-script_key = 'PUTKEYHERE'; -- add ur key here | how to get it is go to panel and press get script then copy your key.
+script_key = 'FtiZOKlYSUYeySQxiNKykLYqtDaLWfRH'; -- add ur key here
 
 getgenv().Pivot = {
-    ["Bullet Redirection"] = { -- Slient Aim
+    ["Bullet Redirection"] = {
         ["Enabled"] = true,
         ['Target BInd'] = 'T',
-        ['Mode'] = 'FOV', -- FOV // Target
+        ['Mode'] = 'Target', -- FOV // Target
         ["Prediction"] = {
-            ["X"] = 0.1225, -- Your Predictions Here!
-            ["Y"] = 0.1225, -- Can use the Same but not Recomended.
-            ["Z"] = 0.1225 -- USE THE Same Pred from X Here.
+            ["X"] = 0.14066,
+            ["Y"] = 0.062,
+            ["Z"] = 0.14047
         },
         ["Hit Location"] = {
-            ["Type"] = "Closest Point", -- Closest Point // Closest Part | Pick one I recomend Closest Point!
+            ["Type"] = "Closest Part",
             ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
-        },                 -- ^ All your Hit Parts That Slient Can Hit.
+        },
         ["Fov"] = {
             ["Size"] = {
-                ["X"] = 8, -- LEGIT Fov | Blatant would be 25, 25, 25
-                ["Y"] = 6,
-                ["Z"] = 4
+                ["X"] = 25,
+                ["Y"] = 25,
+                ["Z"] = 25
             }
         }
     },
 
-    ['Camera'] = { -- Cam Lock.
-    -- -
-        ['Enabled'] = true, -- set this to false to turn the feature off
-        -- -
-        ['Smoothness'] = 0.123, -- Smoothness on Cam Lock.
-        -- -
-        ['Bind'] = 'Q', -- Bind for Cam Lock
-        -- -
+    ['Camera'] = {
+        ['Enabled'] = true,
+        ['Smoothness'] = 0.123,
+        ['Bind'] = 'Q',
+
         ['Fov'] = {
-            ['Value'] = 10, -- the FOV Again but Changed for More Easy Configing.
+            ['Value'] = 0,
         },
 
         ["Hit Location"] = {
-            ["Type"] = "Closest Part", -- Closest Point // Closest Part | Pick one I suggest Closest Part for Camera.!
-            -- -
+            ["Type"] = "Closest Part",
             ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
-            -- ^ All your Hit Parts That Camera Can Hit.
         },
 
         ['Prediction'] = {
-            ['Value'] = 0.11930203,
+            ['Value'] = 0,
         },
     },
 
 
     ['Trigger Bot'] = {
-        ['Enabled'] = true, -- set this to false to turn the feature off
-        -- -
-        ['Mode'] = 'Target', -- Automatic // Target | I suggest Target for Legit | Automatic just shoots them if they are in your FOV.
-        -- -
-        ['Delay'] = 0.0, -- Delay.
+        ['Enabled'] = true,
+        ['Mode'] = 'Automatic', -- Automatic // Target
+        ['Delay'] = 0,
 
         ['Prediction'] = {
-            ['Value'] = 0, -- your pred you dont have to put anything here.
+            ['Value'] = 0,
         },
 
         ['Keybind'] = {
-            ['Bind'] = 'E', -- your keybind.
-            -- -
+            ['Bind'] = 'M1', 
             ['Keybind Mode'] = 'Hold' -- 'Hold' or 'Toggle'
         },
 
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 8, -- Your FOV I suggest 8, 6, 4 For Legit | 25, 25, 25 for Blatant.
-                ['Y'] = 6,
-                ['Z'] = 4,
+                ['X'] = 25,
+                ['Y'] = 25,
+                ['Z'] = 25,
             },
         },
     },
 
-    ['Movement'] = { -- This is Speed Walk Kinda.
+    ['Movement'] = {
         ['Options'] = {
-            ['Enabled'] = true, -- Set this to False to turn it off.
-            -- -
-            ['Default'] = 105, -- your start off speed.
+            ['Enabled'] = true,
+            ['Default'] = 35,
+            ['ToggleMode'] = true,
 
             ['Keybinds'] = {
-                ['Enabled Speed'] = 'V', -- Keybind to Enable Speed Modifications.
-                ['Speed Up'] = 'M', -- Keybind to Press to Turn it up.
-                ['Speed Down'] = 'N', -- Keybind to Press to Turn it down.
+                ['Enabled Speed'] = 'V',
+                ['Speed Up'] = 'M',
+                ['Speed Down'] = 'N',
             }
         }
     },
 
-    ['Bullet'] = { -- Bullet/Spread Modifications.
+    ['Bullet'] = {
         ['Options'] = {
-            ['Enabled'] = true, -- set this to false to turn the feature off
-            -- -
-            ['Percent'] = 0.01 -- Your Start Spread | Default Spread.
+            ['Enabled'] = true,
+            ['Percent'] = 0.01,
             ['ToggleMode'] = true,
 
             ['Keybinds'] = {
-                ['ToggleSpread'] = 'G', -- Keybind to Enable Spread Modifications.
-                ['Spread +0.1'] = 'J', -- Keybind to Press to Turn Spread more Up.
-                ['Spread -0.1'] = 'K',-- Keybind to Press to Turn Spread more Up.
+                ['ToggleSpread'] = 'G',
+                ['Spread +0.1'] = 'J',
+                ['Spread -0.1'] = 'K',
+            },
+            ['Randomizer'] = {
+                ['Enabled'] = true,
+                ['Percent'] = 0.01,
+
+                ["start"] = 1,
+                ["end"] = 1,
+
             },
         }
     },
 }
-
--- ALERT DO NOT MESS WITH THE LOADSTRING
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfbb3bdb0042013aef508e3ca952baa6.lua"))() -- DONT MESS WITH THIS!!
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfbb3bdb0042013aef508e3ca952baa6.lua"))()
