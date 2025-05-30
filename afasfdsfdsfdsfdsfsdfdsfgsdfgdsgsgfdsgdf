@@ -4,36 +4,36 @@ getgenv().Pivot = {
     ["Bullet Redirection"] = {
         ["Enabled"] = true,
         ['Target BInd'] = 'T',
-        ['Mode'] = 'Target', -- FOV // Target
+        ['Mode'] = 'FOV', -- FOV // Target
         ["Prediction"] = {
-            ["X"] = 0.14066,
-            ["Y"] = 0.062,
-            ["Z"] = 0.14047
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0
         },
         ["Hit Location"] = {
-            ["Type"] = "Closest Part",
+            ["Type"] = "Closest Point", -- closest point or closest part
             ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
         },
         ["Fov"] = {
             ["Size"] = {
-                ["X"] = 25,
-                ["Y"] = 25,
-                ["Z"] = 25
+                ["X"] = 13,
+                ["Y"] = 13,
+                ["Z"] = 13
             }
         }
     },
 
-    ['Camera'] = {
+    ['camlock'] = {
         ['Enabled'] = true,
         ['Smoothness'] = 0.123,
         ['Bind'] = 'Q',
 
         ['Fov'] = {
-            ['Value'] = 0,
+            ['Value'] = 100,
         },
 
         ["Hit Location"] = {
-            ["Type"] = "Closest Part",
+            ["Type"] = "Closest Point",
             ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
         },
 
@@ -59,9 +59,9 @@ getgenv().Pivot = {
 
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 25,
-                ['Y'] = 25,
-                ['Z'] = 25,
+                ['X'] = 13,
+                ['Y'] = 13,
+                ['Z'] = 13,
             },
         },
     },
@@ -94,4 +94,3 @@ getgenv().Pivot = {
         }
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfbb3bdb0042013aef508e3ca952baa6.lua"))()
