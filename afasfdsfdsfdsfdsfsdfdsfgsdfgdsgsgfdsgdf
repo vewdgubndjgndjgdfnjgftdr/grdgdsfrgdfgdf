@@ -1,24 +1,24 @@
-script_key = ''; -- add ur key here
+script_key = 'FtiZOKlYSUYeySQxiNKykLYqtDaLWfRH'; -- add ur key here
 
-getgenv().Pivot = {
+getgenv().Krylon = {
     ["Bullet Redirection"] = {
         ["Enabled"] = true,
         ['Target BInd'] = 'T',
         ['Mode'] = 'FOV', -- FOV // Target
         ["Prediction"] = {
-            ["X"] = 0,
-            ["Y"] = 0,
-            ["Z"] = 0
+            ["X"] = 0.14066,
+            ["Y"] = 0.062,
+            ["Z"] = 0.14047
         },
         ["Hit Location"] = {
             ["Type"] = "Closest Point", -- closest point or closest part
-            ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
+            ["Parts"] = {"Head"}
         },
         ["Fov"] = {
             ["Size"] = {
-                ["X"] = 13,
-                ["Y"] = 13,
-                ["Z"] = 13
+                ["X"] = 25,
+                ["Y"] = 25,
+                ["Z"] = 25
             }
         }
     },
@@ -34,7 +34,7 @@ getgenv().Pivot = {
 
         ["Hit Location"] = {
             ["Type"] = "Closest Point",
-            ["Parts"] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
+            ["Parts"] = {"Head"}
         },
 
         ['Prediction'] = {
@@ -59,9 +59,9 @@ getgenv().Pivot = {
 
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 13,
-                ['Y'] = 13,
-                ['Z'] = 13,
+                ['X'] = 15,
+                ['Y'] = 15,
+                ['Z'] = 15,
             },
         },
     },
@@ -94,4 +94,4 @@ getgenv().Pivot = {
         }
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/dfbb3bdb0042013aef508e3ca952baa6.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua"))()
