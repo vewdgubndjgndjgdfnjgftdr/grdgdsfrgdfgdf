@@ -1,7 +1,7 @@
 script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
-    ["Bullet Redirection"] = {
+    ["Silent Aim"] = {
         ["Enabled"] = true,
         ['Target BInd'] = 'T',
         ['Mode'] = 'FOV', -- FOV // Target
@@ -10,7 +10,7 @@ getgenv().Krylon = {
             ["Y"] = 0.062,
             ["Z"] = 0.14047
         },
-        ["Hit Location"] = {
+        ["Bullet Redirection"] = {
             ["Type"] = "Closest Point", -- closest point or closest part
             ["Parts"] = {"Head"}
         },
@@ -23,7 +23,7 @@ getgenv().Krylon = {
         }
     },
 
-    ['camlock'] = {
+    ['Camera Aimbot'] = {
         ['Enabled'] = true,
         ['Smoothness'] = 0.123,
         ['Bind'] = 'Q',
@@ -32,7 +32,7 @@ getgenv().Krylon = {
             ['Value'] = 100,
         },
 
-        ["Hit Location"] = {
+        ["Bullet Redirection"] = {
             ["Type"] = "Closest Point",
             ["Parts"] = {"Head"}
         },
@@ -76,11 +76,17 @@ getgenv().Krylon = {
                 ['Enabled Speed'] = 'V',
                 ['Speed Up'] = 'M',
                 ['Speed Down'] = 'N',
-            }
+            },
+        },
+        ["Macro"] = {
+            ["Enabled"] = false,
+            ["Keybind"] = "X",
+            ["ToggleMode"] = true, -- false = Hold
+            ["Mode"] = "First" -- First or Third
         }
     },
 
-    ['Bullet'] = {
+    ['Bullet Modification'] = {
         ['Options'] = {
             ['Enabled'] = true,
             ['Percent'] = 0.01,
