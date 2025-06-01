@@ -1,16 +1,20 @@
 script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
+    ['Core'] = {
+        ['Version'] = 'v2.4',
+    },
+
     ["Silent Aim"] = {
         ["Enabled"] = true,
         ['Target BInd'] = 'T',
-        ['Mode'] = 'FOV', -- FOV // Target
+        ['Mode'] = 'Silent', -- Silent // Target
         ["Prediction"] = {
-            ["X"] = 0.14066,
-            ["Y"] = 0.062,
-            ["Z"] = 0.14047
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0
         },
-        ["Bullet Redirection"] = {
+        ["HIt Loaction"] = {
             ["Type"] = "Closest Point", -- closest point or closest part
             ["Parts"] = {"Head"}
         },
@@ -27,18 +31,21 @@ getgenv().Krylon = {
         ['Enabled'] = true,
         ['Smoothness'] = 0.123,
         ['Bind'] = 'Q',
-
-        ['Fov'] = {
-            ['Value'] = 100,
+        ['Prediction'] = {
+            ["X"] = 25,
+            ["Y"] = 25,
+            ["Z"] = 25
         },
-
-        ["Bullet Redirection"] = {
+        ["HIt Loaction"] = {
             ["Type"] = "Closest Point",
             ["Parts"] = {"Head"}
         },
-
-        ['Prediction'] = {
-            ['Value'] = 0,
+        ["Fov"] = {
+            ["Size"] = {
+                ["X"] = 25,
+                ["Y"] = 25,
+                ["Z"] = 25
+            }
         },
     },
 
@@ -47,16 +54,15 @@ getgenv().Krylon = {
         ['Enabled'] = true,
         ['Mode'] = 'Automatic', -- Automatic // Target
         ['Delay'] = 0,
-
         ['Prediction'] = {
-            ['Value'] = 0,
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
         },
-
         ['Keybind'] = {
             ['Bind'] = 'M1', 
             ['Keybind Mode'] = 'Hold' -- 'Hold' or 'Toggle'
         },
-
         ['Fov'] = {
             ['Size'] = {
                 ['X'] = 15,
@@ -83,6 +89,15 @@ getgenv().Krylon = {
             ["Keybind"] = "X",
             ["ToggleMode"] = true, -- false = Hold
             ["Mode"] = "First" -- First or Third
+        }
+    },
+
+    ['Gun Delay'] = {
+        ['Enabled'] = true,
+        ['Weapons'] = {
+            ['Double-Barrel SG'] = 0,
+            ['Revolver'] = 0,
+            ['TacticalShotgun'] = 0,
         }
     },
 
