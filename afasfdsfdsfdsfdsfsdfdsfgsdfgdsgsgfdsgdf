@@ -8,7 +8,7 @@ getgenv().Krylon = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Target Bind'] = 'T',
-        ['Mode'] = 'Silent', -- Silent // Target
+        ['Mode'] = 'Target', -- Silent // Target
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
@@ -17,6 +17,9 @@ getgenv().Krylon = {
         ['HIt Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {'Head'}
+        },
+        ['Checks'] = {
+            'Wall', 'Knocked', 'Grabbed', 'Vehicle'
         },
         ['Fov'] = {
             ['Size'] = {
@@ -52,7 +55,7 @@ getgenv().Krylon = {
 
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Mode'] = 'Automatic', -- Automatic // Target
+        ['Mode'] = 'Target', -- Automatic // Target
         ['Delay'] = 0,
         ['Prediction'] = {
             ['X'] = 0,
@@ -60,14 +63,14 @@ getgenv().Krylon = {
             ['Z'] = 0,
         },
         ['Keybind'] = {
-            ['Bind'] = 'M1', 
-            ['Keybind Mode'] = 'Hold' -- 'Hold' or 'Toggle'
+            ['Bind'] = 'T', 
+            ['Keybind Mode'] = 'Toggle' -- 'Hold' or 'Toggle'
         },
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 15,
-                ['Y'] = 15,
-                ['Z'] = 15,
+                ['X'] = 25,
+                ['Y'] = 25,
+                ['Z'] = 25,
             },
         },
     },
@@ -114,4 +117,5 @@ getgenv().Krylon = {
         }
     },
 }
+
 loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua'))()
