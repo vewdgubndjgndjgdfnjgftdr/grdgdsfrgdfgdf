@@ -8,6 +8,7 @@ getgenv().Krylon = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Target Bind'] = 'T',
+        ['Checks'] = { 'Wall', 'Knocked', 'Grabbed', 'Vehicle' },
         ['Mode'] = 'Target', -- Silent // Target
         ['Prediction'] = {
             ['X'] = 0,
@@ -17,9 +18,6 @@ getgenv().Krylon = {
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
-        },
-        ['Checks'] = {
-            'Wall', 'Knocked', 'Grabbed', 'Vehicle'
         },
         ['Fov'] = {
             ['Size'] = {
@@ -117,5 +115,6 @@ getgenv().Krylon = {
         }
     },
 }
+
 
 loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua'))()
