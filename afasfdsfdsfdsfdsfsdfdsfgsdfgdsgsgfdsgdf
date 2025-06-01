@@ -5,24 +5,24 @@ getgenv().Krylon = {
         ['Version'] = 'v2.43',
     },
 
-    ["Silent Aim"] = {
-        ["Enabled"] = true,
+    ['Silent Aim'] = {
+        ['Enabled'] = true,
         ['Target Bind'] = 'T',
         ['Mode'] = 'Silent', -- Silent // Target
-        ["Prediction"] = {
-            ["X"] = 0,
-            ["Y"] = 0,
-            ["Z"] = 0
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
         },
-        ["HIt Loaction"] = {
-            ["Type"] = "Closest Point", -- Closest Point or Closest Part
-            ["Parts"] = {"Head"}
+        ['HIt Loaction'] = {
+            ['Type'] = 'Closest Point', -- Closest Point or Closest Part
+            ['Parts'] = {'Head'}
         },
-        ["Fov"] = {
-            ["Size"] = {
-                ["X"] = 25,
-                ["Y"] = 25,
-                ["Z"] = 25
+        ['Fov'] = {
+            ['Size'] = {
+                ['X'] = 25,
+                ['Y'] = 25,
+                ['Z'] = 25
             }
         }
     },
@@ -32,19 +32,19 @@ getgenv().Krylon = {
         ['Smoothness'] = 0.123,
         ['Bind'] = 'Q',
         ['Prediction'] = {
-            ["X"] = 0,
-            ["Y"] = 0,
-            ["Z"] = 0
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
         },
-        ["HIt Loaction"] = {
-            ["Type"] = "Closest Point", -- Closest Point or Closest Part
-            ["Parts"] = {"Head"}
+        ['HIt Loaction'] = {
+            ['Type'] = 'Closest Point', -- Closest Point or Closest Part
+            ['Parts'] = {'Head'}
         },
-        ["Fov"] = {
-            ["Size"] = {
-                ["X"] = 25,
-                ["Y"] = 25,
-                ["Z"] = 25
+        ['Fov'] = {
+            ['Size'] = {
+                ['X'] = 25,
+                ['Y'] = 25,
+                ['Z'] = 25
             }
         },
     },
@@ -84,11 +84,11 @@ getgenv().Krylon = {
                 ['Speed Down'] = 'N',
             },
         },
-        ["Macro"] = {
-            ["Enabled"] = false,
-            ["Keybind"] = "X",
-            ["ToggleMode"] = true, -- false = Hold
-            ["Mode"] = "First" -- First or Third
+        ['Macro'] = {
+            ['Enabled'] = false,
+            ['Keybind'] = 'X',
+            ['ToggleMode'] = true, -- false = Hold
+            ['Mode'] = 'First' -- First or Third
         }
     },
 
@@ -114,4 +114,4 @@ getgenv().Krylon = {
         }
     },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua"))()
+loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua'))()
