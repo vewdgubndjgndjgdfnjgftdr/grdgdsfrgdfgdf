@@ -14,9 +14,9 @@ getgenv().Krylon = {
             ['Y'] = 0,
             ['Z'] = 0
         },
-        ['HIt Loaction'] = {
+        ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
-            ['Parts'] = {'Head'}
+            ['Parts'] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
         },
         ['Checks'] = {
             'Wall', 'Knocked', 'Grabbed', 'Vehicle'
@@ -39,9 +39,9 @@ getgenv().Krylon = {
             ['Y'] = 0,
             ['Z'] = 0
         },
-        ['HIt Loaction'] = {
+        ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
-            ['Parts'] = {'Head'}
+            ['Parts'] = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"}
         },
         ['Fov'] = {
             ['Size'] = {
