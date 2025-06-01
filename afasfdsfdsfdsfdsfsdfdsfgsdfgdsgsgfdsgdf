@@ -2,12 +2,12 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v2.4',
+        ['Version'] = 'v2.43',
     },
 
     ["Silent Aim"] = {
         ["Enabled"] = true,
-        ['Target BInd'] = 'T',
+        ['Target Bind'] = 'T',
         ['Mode'] = 'Silent', -- Silent // Target
         ["Prediction"] = {
             ["X"] = 0,
@@ -15,7 +15,7 @@ getgenv().Krylon = {
             ["Z"] = 0
         },
         ["HIt Loaction"] = {
-            ["Type"] = "Closest Point", -- closest point or closest part
+            ["Type"] = "Closest Point", -- Closest Point or Closest Part
             ["Parts"] = {"Head"}
         },
         ["Fov"] = {
@@ -32,12 +32,12 @@ getgenv().Krylon = {
         ['Smoothness'] = 0.123,
         ['Bind'] = 'Q',
         ['Prediction'] = {
-            ["X"] = 25,
-            ["Y"] = 25,
-            ["Z"] = 25
+            ["X"] = 0,
+            ["Y"] = 0,
+            ["Z"] = 0
         },
         ["HIt Loaction"] = {
-            ["Type"] = "Closest Point",
+            ["Type"] = "Closest Point", -- Closest Point or Closest Part
             ["Parts"] = {"Head"}
         },
         ["Fov"] = {
@@ -72,7 +72,7 @@ getgenv().Krylon = {
         },
     },
 
-    ['Movement'] = {
+    ['Player Modification'] = {
         ['Options'] = {
             ['Enabled'] = true,
             ['Default'] = 35,
@@ -92,16 +92,7 @@ getgenv().Krylon = {
         }
     },
 
-    ['Gun Delay'] = {
-        ['Enabled'] = true,
-        ['Weapons'] = {
-            ['Double-Barrel SG'] = 0,
-            ['Revolver'] = 0,
-            ['TacticalShotgun'] = 0,
-        }
-    },
-
-    ['Bullet Modification'] = {
+    ['Weapon Modification'] = {
         ['Options'] = {
             ['Enabled'] = true,
             ['Percent'] = 0.01,
@@ -111,6 +102,14 @@ getgenv().Krylon = {
                 ['ToggleSpread'] = 'G',
                 ['Spread +0.1'] = 'J',
                 ['Spread -0.1'] = 'K',
+            },
+        },
+        ['Gun Delay'] = {
+            ['Enabled'] = true,
+            ['Weapons'] = {
+                ['Double-Barrel SG'] = 0,
+                ['Revolver'] = 0,
+                ['TacticalShotgun'] = 0,
             },
         }
     },
