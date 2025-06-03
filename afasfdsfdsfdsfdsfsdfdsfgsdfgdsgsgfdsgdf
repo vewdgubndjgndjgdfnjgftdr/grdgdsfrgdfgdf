@@ -2,28 +2,28 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v2.45',
+        ['Version'] = 'v2.5',
     },
 
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Target Bind'] = 'T',
         ['Checks'] = { 'Wall', 'Knocked', 'Grabbed', 'Vehicle' },
-        ['Mode'] = 'Target', -- Silent // Target
+        ['Mode'] = 'Silent', -- Silent // Target
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
         ['Hit Loaction'] = {
-            ['Type'] = 'Closest Point', -- Closest Point or Closest Part
+            ['Type'] = 'Closest part', -- Closest Point or Closest Part
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'}
         },
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 25,
-                ['Y'] = 25,
-                ['Z'] = 25
+                ['X'] = 13,
+                ['Y'] = 13,
+                ['Z'] = 13
             }
         }
     },
@@ -65,9 +65,9 @@ getgenv().Krylon = {
         },
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 25,
-                ['Y'] = 25,
-                ['Z'] = 25,
+                ['X'] = 13,
+                ['Y'] = 13,
+                ['Z'] = 13,
             },
         },
     },
@@ -115,14 +115,13 @@ getgenv().Krylon = {
         ['Inventory Sorter'] =  {
             ['Enabled'] = true,
                 ['Sort Food'] = true,
-                ['Keybind'] = 'G',
+                ['Keybind'] = 'Y',
                 ['Slot 1'] = '[Double-Barrel SG]',
                 ['Slot 2'] = '[Revolver]',
                 ['Slot 3'] = '[TacticalShotgun]',
                 ['Slot 4'] = '[Knife]',
         },
-    }
+    },
 }
-
 
 loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua'))()
