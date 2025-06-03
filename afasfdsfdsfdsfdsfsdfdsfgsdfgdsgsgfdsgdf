@@ -2,21 +2,20 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v2.5',
+        ['Version'] = 'v3',
     },
 
     ['Silent Aim'] = {
         ['Enabled'] = true,
+        ['Mode'] = 'Target', -- Silent // Target
         ['Target Bind'] = 'T',
-        ['Checks'] = { 'Wall', 'Knocked', 'Grabbed', 'Vehicle' },
-        ['Mode'] = 'Silent', -- Silent // Target
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
         ['Hit Loaction'] = {
-            ['Type'] = 'Closest part', -- Closest Point or Closest Part
+            ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'}
         },
         ['Fov'] = {
@@ -85,9 +84,9 @@ getgenv().Krylon = {
             },
         },
         ['Macro'] = {
-            ['Enabled'] = false,
+            ['Enabled'] = true,
             ['Keybind'] = 'X',
-            ['ToggleMode'] = true, -- false = Hold
+            ['ToggleMode'] = false, -- false = Hold
             ['Mode'] = 'First' -- First or Third
         }
     },
