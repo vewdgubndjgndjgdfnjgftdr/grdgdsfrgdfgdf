@@ -51,7 +51,7 @@ getgenv().Krylon = {
 
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Mode'] = 'Target', -- Automatic // Target
+        ['Mode'] = 'Automatic', -- Automatic // Target
         ['Delay'] = 0,
         ['Prediction'] = {
             ['X'] = 0,
@@ -62,7 +62,12 @@ getgenv().Krylon = {
             ['Bind'] = 'T', 
             ['Keybind Mode'] = 'Toggle' -- 'Hold' or 'Toggle'
         },
+        ['HitParts'] = {
+            ['Type'] = false,
+            ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg', 'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'}
+        },
         ['Fov'] = {
+            ['Enabled'] = true,
             ['Size'] = {
                 ['X'] = 13,
                 ['Y'] = 13,
