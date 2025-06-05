@@ -10,9 +10,9 @@ getgenv().Krylon = {
         ['Mode'] = 'Target', -- Silent // Target
         ['Target Bind'] = 'T',
         ['Prediction'] = {
-            ['X'] = 0.12053,
-            ['Y'] = 0.062,
-            ['Z'] = 0.12053
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0
         },
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
