@@ -2,13 +2,14 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v3',
+        ['Version'] = 'v3.1',
+        ['Uninject'] = 'B',
     },
 
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Mode'] = 'Target', -- Silent // Target
-        ['Target Bind'] = 'T',
+        ['Target Bind'] = 'm2',
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
@@ -20,21 +21,22 @@ getgenv().Krylon = {
         },
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 13,
-                ['Y'] = 13,
-                ['Z'] = 13
+                ['X'] = 27,
+                ['Y'] = 25,
+                ['Z'] = 27
             }
         }
     },
 
     ['Camera Aimbot'] = {
-        ['Enabled'] = true,
-        ['Smoothness'] = 0.123,
-        ['Bind'] = 'Q',
+        ['Enabled'] = false,
+        ['Mode'] = 'sticky', -- sticky // unsticky
+        ['Smoothness'] = 0.043,
+        ['Bind'] = 'T',
         ['Prediction'] = {
-            ['X'] = 0,
+            ['X'] = 0.1225,
             ['Y'] = 0,
-            ['Z'] = 0
+            ['Z'] = 0.121
         },
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
@@ -51,15 +53,15 @@ getgenv().Krylon = {
 
     ['Trigger Bot'] = {
         ['Enabled'] = true,
-        ['Mode'] = 'Automatic', -- Automatic // Target
-        ['Delay'] = 0,
+        ['Mode'] = 'Target', -- Automatic // Target
+        ['Delay'] = 0.00,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0,
         },
         ['Keybind'] = {
-            ['Bind'] = 'T', 
+            ['Bind'] = 'm2', 
             ['Keybind Mode'] = 'Toggle' -- 'Hold' or 'Toggle'
         },
         ['HitParts'] = {
@@ -69,9 +71,9 @@ getgenv().Krylon = {
         ['Fov'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 13,
-                ['Y'] = 13,
-                ['Z'] = 13,
+                ['X'] = 14.0,
+                ['Y'] = 13.0,
+                ['Z'] = 15.0,
             },
         },
     },
@@ -118,6 +120,7 @@ getgenv().Krylon = {
         },
         ['Inventory Sorter'] =  {
             ['Enabled'] = true,
+                ['Autoset'] = true,
                 ['Sort Food'] = true,
                 ['Keybind'] = 'Y',
                 ['Slot 1'] = '[Double-Barrel SG]',
