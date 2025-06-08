@@ -2,23 +2,25 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v3.1',
-        ['Uninject'] = 'B',
+        ['Version'] = 'v3.2',
     },
 
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Mode'] = 'Target', -- Silent // Target
-        ['Target Bind'] = 'm2',
+        ['Target Bind'] = 'T',
+
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
+
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'}
         },
+
         ['Fov'] = {
             ['Size'] = {
                 ['X'] = 27,
@@ -33,15 +35,18 @@ getgenv().Krylon = {
         ['Mode'] = 'sticky', -- sticky // unsticky
         ['Smoothness'] = 0.043,
         ['Bind'] = 'T',
+
         ['Prediction'] = {
             ['X'] = 0.1225,
             ['Y'] = 0,
             ['Z'] = 0.121
         },
+
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'}
         },
+
         ['Fov'] = {
             ['Size'] = {
                 ['X'] = 25,
@@ -60,14 +65,17 @@ getgenv().Krylon = {
             ['Y'] = 0,
             ['Z'] = 0,
         },
+        
         ['Keybind'] = {
-            ['Bind'] = 'm2', 
+            ['Bind'] = 'T', 
             ['Keybind Mode'] = 'Toggle' -- 'Hold' or 'Toggle'
         },
+
         ['HitParts'] = {
             ['Type'] = false,
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg', 'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'}
         },
+
         ['Fov'] = {
             ['Enabled'] = true,
             ['Size'] = {
@@ -90,12 +98,6 @@ getgenv().Krylon = {
                 ['Speed Down'] = 'N',
             },
         },
-        ['Macro'] = {
-            ['Enabled'] = true,
-            ['Keybind'] = 'X',
-            ['ToggleMode'] = false, -- false = Hold
-            ['Mode'] = 'First' -- First or Third
-        }
     },
 
     ['Weapon Modification'] = {
@@ -110,25 +112,6 @@ getgenv().Krylon = {
                 ['Spread -0.1'] = 'K',
             },
         },
-        ['Gun Delay'] = {
-            ['Enabled'] = true,
-            ['Weapons'] = {
-                ['Double-Barrel SG'] = 0,
-                ['Revolver'] = 0,
-                ['TacticalShotgun'] = 0,
-            },
-        },
-        ['Inventory Sorter'] =  {
-            ['Enabled'] = true,
-                ['Autoset'] = true,
-                ['Sort Food'] = true,
-                ['Keybind'] = 'Y',
-                ['Slot 1'] = '[Double-Barrel SG]',
-                ['Slot 2'] = '[Revolver]',
-                ['Slot 3'] = '[TacticalShotgun]',
-                ['Slot 4'] = '[Knife]',
-        },
     },
 }
-
 loadstring(game:HttpGet('https://api.luarmor.net/files/v3/loaders/0ee8891e4b4c3333f64dc5e0ade13245.lua'))()
