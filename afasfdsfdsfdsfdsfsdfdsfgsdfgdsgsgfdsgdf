@@ -2,7 +2,7 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v3.2',
+        ['Version'] = 'v3.3',
     },
 
     ['Silent Aim'] = {
@@ -31,10 +31,10 @@ getgenv().Krylon = {
     },
 
     ['Camera Aimbot'] = {
-        ['Enabled'] = false,
+        ['Enabled'] = true,
         ['Mode'] = 'sticky', -- sticky // unsticky
         ['Smoothness'] = 0.043,
-        ['Bind'] = 'T',
+        ['Bind'] = 'm2',
 
         ['Prediction'] = {
             ['X'] = 0.1225,
@@ -103,7 +103,7 @@ getgenv().Krylon = {
     ['Weapon Modification'] = {
         ['Options'] = {
             ['Enabled'] = true,
-            ['Percent'] = 0.01,
+            ['Percent'] = 1,
             ['ToggleMode'] = true,
 
             ['Keybinds'] = {
