@@ -2,27 +2,30 @@ script_key = ''; -- add ur key here
 
 getgenv().Krylon = {
     ['Core'] = {
-        ['Version'] = 'v3.1',
+        ['Version'] = 'v3.3',
     },
 
     ['Silent Aim'] = {
         ['Enabled'] = true,
         ['Mode'] = 'Target', -- Silent // Target
         ['Target Bind'] = 'T',
+
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0
         },
+
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'}
         },
+
         ['Fov'] = {
             ['Size'] = {
-                ['X'] = 13,
-                ['Y'] = 13,
-                ['Z'] = 13
+                ['X'] = 27,
+                ['Y'] = 25,
+                ['Z'] = 27
             }
         }
     },
@@ -30,17 +33,20 @@ getgenv().Krylon = {
     ['Camera Aimbot'] = {
         ['Enabled'] = false,
         ['Mode'] = 'sticky', -- sticky // unsticky
-        ['Smoothness'] = 0.123,
-        ['Bind'] = 'Q',
+        ['Smoothness'] = 0.043,
+        ['Bind'] = 'T',
+
         ['Prediction'] = {
-            ['X'] = 0,
+            ['X'] = 0.1225,
             ['Y'] = 0,
-            ['Z'] = 0
+            ['Z'] = 0.121
         },
+
         ['Hit Loaction'] = {
             ['Type'] = 'Closest Point', -- Closest Point or Closest Part
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg',  'LeftUpperLeg', 'RightLowerLeg', 'RightFoot',  'RightUpperLeg'}
         },
+
         ['Fov'] = {
             ['Size'] = {
                 ['X'] = 25,
@@ -53,26 +59,29 @@ getgenv().Krylon = {
     ['Trigger Bot'] = {
         ['Enabled'] = true,
         ['Mode'] = 'Target', -- Automatic // Target
-        ['Delay'] = 0,
+        ['Delay'] = 0.00,
         ['Prediction'] = {
             ['X'] = 0,
             ['Y'] = 0,
             ['Z'] = 0,
         },
+        
         ['Keybind'] = {
             ['Bind'] = 'T', 
             ['Keybind Mode'] = 'Toggle' -- 'Hold' or 'Toggle'
         },
+
         ['HitParts'] = {
             ['Type'] = false,
             ['Parts'] = {'Head', 'UpperTorso', 'HumanoidRootPart', 'LowerTorso', 'LeftHand', 'RightHand', 'LeftLowerArm', 'RightLowerArm', 'LeftUpperArm', 'RightUpperArm', 'LeftFoot', 'LeftLowerLeg', 'LeftUpperLeg', 'RightLowerLeg', 'RightFoot', 'RightUpperLeg'}
         },
+
         ['Fov'] = {
             ['Enabled'] = true,
             ['Size'] = {
-                ['X'] = 13,
-                ['Y'] = 13,
-                ['Z'] = 13,
+                ['X'] = 14.0,
+                ['Y'] = 13.0,
+                ['Z'] = 15.0,
             },
         },
     },
@@ -89,12 +98,6 @@ getgenv().Krylon = {
                 ['Speed Down'] = 'N',
             },
         },
-        ['Macro'] = {
-            ['Enabled'] = true,
-            ['Keybind'] = 'X',
-            ['ToggleMode'] = false, -- false = Hold
-            ['Mode'] = 'First' -- First or Third
-        }
     },
 
     ['Weapon Modification'] = {
@@ -109,24 +112,7 @@ getgenv().Krylon = {
                 ['Spread -0.1'] = 'K',
             },
         },
-        ['Gun Delay'] = {
-            ['Enabled'] = true,
-            ['Weapons'] = {
-                ['Double-Barrel SG'] = 0,
-                ['Revolver'] = 0,
-                ['TacticalShotgun'] = 0,
-            },
-        },
-        ['Inventory Sorter'] =  {
-            ['Enabled'] = true,
-                ['Autoset'] = true,
-                ['Sort Food'] = true,
-                ['Keybind'] = 'Y',
-                ['Slot 1'] = '[Double-Barrel SG]',
-                ['Slot 2'] = '[Revolver]',
-                ['Slot 3'] = '[TacticalShotgun]',
-                ['Slot 4'] = '[Knife]',
-        },
     },
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b1ca634e46876ad922346d778aa3f0f0.lua"))()
